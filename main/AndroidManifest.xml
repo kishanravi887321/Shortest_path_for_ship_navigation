@@ -23,7 +23,7 @@
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCSGWoy2GrZMOStSuM4Mwb1NiRSiaSM-KA"/> <!-- Replace with your actual API key -->
+            android:value="AIzaSyCSGWoy2GrZMOStSuM4Mwb21ghgjjkjhjNiRSiaSM-KA"/> <!-- Replace with your actual API key -->
         <meta-data
             android:name="MAPBOX_ACCESS_TOKEN"
             android:value="sk.eyJ1IjoicmF2aWtpc2hhbjg4NzMiLCJhIjoiY20xc3N6cDk1MDhvYTJycjRyd3lsbnMzdCJ9.GnRtZ_xNCfUwtRyip0oA2Q" />
