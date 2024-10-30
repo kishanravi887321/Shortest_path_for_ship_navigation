@@ -25,7 +25,7 @@ To set up the project locally:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/username/ship-routing-application.git
+git clone https://github.com/kishanravi887321/Shortest_path_for_ship_navigation.git
 Open the project in Android Studio.
 Set up any required API keys for weather and map data services.
 Run the application on an Android emulator or a physical device.
