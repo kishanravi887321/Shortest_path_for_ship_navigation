@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Request for Internet permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Request for Location permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- For precise location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- For approximate location -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCSGWoy2GrZMOStSuM4Mwb1NiRSiaSM-KA"/> <!-- Replace with your actual API key -->
+        <meta-data
+            android:name="MAPBOX_ACCESS_TOKEN"
+            android:value="sk.eyJ1IjoicmF2aWtpc2hhbjg4NzMiLCJhIjoiY20xc3N6cDk1MDhvYTJycjRyd3lsbnMzdCJ9.GnRtZ_xNCfUwtRyip0oA2Q" />
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddRouteActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+    </application>
+</manifest>

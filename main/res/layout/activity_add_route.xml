@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" /> <!-- Adjust height as needed -->
+
+    <!-- Weather Info TextView -->
+    <TextView
+        android:id="@+id/weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Info"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/> <!-- Add margin for spacing -->
+
+    <!-- Origin Port Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/originInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Origin Port"
+            android:layout_weight="1"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/originMapIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google_map_icon"
+            android:contentDescription="Select Origin Port"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Destination Port Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/destinationInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Destination Port"
+            android:layout_weight="1"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/destinationMapIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google_map_icon"
+            android:contentDescription="Select Destination Port"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Other Inputs -->
+    <EditText
+        android:id="@+id/waypointsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Waypoints"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/fuelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fuel Consumption"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/travelTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Travel Time"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/comfortInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passenger Comfort"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Route"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/selectRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Route"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

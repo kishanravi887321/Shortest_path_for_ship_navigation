@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">dummyjava</string>
+    <string name="google_maps_key">AIzaSyCSGWoy2GrZMOStSuM4Mwb1NiRSiaSM-KA</string>
+    <string name="google_openwhether_api_key">e4e5c053387d61d23143a30896d67451</string>
+</resources>
